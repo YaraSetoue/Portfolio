@@ -1,0 +1,30 @@
+.section{
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    height: fit-content;
+    transition: 0.4s;
+    position: sticky;
+    top: 30px;
+}
+.btn-icon{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.btn-icon .tab-link{
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--color-secondary);
+    padding: 10px;
+    transition: 0.5s;
+}
+.btn-icon .tab-link:hover{
+    background-color: var(--color-primary);
+}
+.btn-icon .tab-link:hover .icon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(174%) contrast(104%);
+}

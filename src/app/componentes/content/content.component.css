@@ -1,0 +1,9 @@
+.section{
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    height: fit-content;
+    transition: 0.4s;
+}

@@ -1,0 +1,105 @@
+
+.section{
+    display: flex;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: fit-content;
+    transition: 0.4s;
+    position: sticky;
+    top: 30px;
+}
+.foto-perfil{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-secondary);
+}
+.sociais .btn-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sociais .btn-icon li{
+    background-color: var(--color-primary);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+.sociais .btn-icon li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sociais .btn-icon li .icon{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(174%) contrast(104%);
+}
+.sociais .btn-icon li:hover{
+    background-color: #f0f0f0;
+}
+.sociais .btn-icon li:hover .icon{
+    filter: none;
+}
+
+.btn{
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s;
+    border: 1px solid var(--color-primary);
+}
+
+.btn .link-download span{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-btn);
+}
+.btn:hover{
+    background-color: var(--color-secondary);
+}
+.btn:hover .link-download span{
+    color: var(--color-primary);
+}
+.img-icon{
+    display: none;
+}
+.img-icon img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(174%) contrast(104%);
+}
+@media  ( max-width: 1000px ){
+    .nome h2{
+        text-wrap: balance;
+        text-overflow: ellipsis;
+    }
+    .btn{
+        padding: 10px;
+    }
+    .icon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .link-download .img-icon{
+        display: flex;
+        justify-content: center;
+    }
+    .link-download span{
+        display: none;
+    }
+    .foto-perfil{
+        display: none;
+    }
+    .sociais .btn-icon{
+        flex-direction: column;
+    }
+}
+@media  ( max-width: 800px ){
+    .section{
+        display: none;
+    }
+}
