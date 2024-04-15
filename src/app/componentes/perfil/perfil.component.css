@@ -68,11 +68,13 @@
 }
 .img-icon{
     display: none;
+    transition: 0.4s;
 }
 .img-icon img{
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(174%) contrast(104%);
 }
-@media  ( max-width: 1000px ){
+
+@media  ( max-width: 1140px ){
     .nome h2{
         text-wrap: balance;
         text-overflow: ellipsis;
@@ -98,7 +100,7 @@
         flex-direction: column;
     }
 }
-@media  ( max-width: 800px ){
+@media  ( max-width: 1024px ){
     .section{
         display: none;
     }

@@ -44,6 +44,15 @@ p{
     width: 2rem;
     height: 2rem;
 }
+a{
+    text-decoration: none;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .card{
     background-color: var(--color-secondary);
     padding: 20px;

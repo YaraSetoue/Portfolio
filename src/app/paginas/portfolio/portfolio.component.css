@@ -50,6 +50,19 @@ span{
 }
 @media  ( max-width: 1130px ){
     .card{
+        flex-basis: 48%;
+    }
+}
+@media(max-width: 1024px){
+    .box-section{
+        width: auto;
+    }
+    .card{
+        flex-basis: 47%;
+    }
+}
+@media(max-width: 800px){
+    .card{
         flex-basis: 100%;
     }
 }

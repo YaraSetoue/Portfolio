@@ -24,4 +24,9 @@ export class SidebarComponent {
     goContato(){
         this.router.navigate(['/contato']);
     }
+
+    // BASE = document.getElementsByTagName('base');
+    assets(url:string){
+        return './assets'+ url;
+    }
 }
