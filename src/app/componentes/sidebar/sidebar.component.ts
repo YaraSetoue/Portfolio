@@ -27,6 +27,6 @@ export class SidebarComponent {
 
     // BASE = document.getElementsByTagName('base');
     assets(url:string){
-        return './assets'+ url;
+        return '/Portfolio/assets'+ url;
     }
 }

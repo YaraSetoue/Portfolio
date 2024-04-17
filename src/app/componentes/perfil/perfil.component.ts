@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class PerfilComponent {
     assets(url:string){
-        return './assets'+ url;
+        return '/Portfolio/assets'+ url;
     }
 }
