@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './contato.component.css'
 })
 export class ContatoComponent {
-
+  hasValue: boolean = false;
+  VerificaValue(id:any){
+    return (document.getElementsByName(id)[0].nodeValue) ? true : false
+  }
 }

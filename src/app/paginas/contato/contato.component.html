@@ -1,1 +1,11 @@
-<h2>Contato</h2>
+<div class="box-section">
+    <h2>Contato</h2>
+    <form class="form" action="">
+        <div class="form-group">
+            <input class="form-control" type="text" name="NOME" (click)="VerificaValue('NOME')">
+            <div class="form-label" [class.hasvalue]="hasValue">
+                <label class="label" for="NOME">Nome</label>
+            </div>
+        </div>
+    </form>
+</div>
