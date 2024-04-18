@@ -1,7 +1,7 @@
-.section{
+.section-menu{
     padding: 30px;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     align-items: flex-start;
     height: fit-content;
@@ -17,7 +17,7 @@
 
 .btn-icon .tab-link{
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 5px;
     background: var(--color-secondary);
     padding: 10px;
     transition: 0.5s;

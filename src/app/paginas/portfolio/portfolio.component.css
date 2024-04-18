@@ -3,9 +3,6 @@ span{
     font-weight: bolder;
     color: var(--color);
 }
-.box-section{
-    width: 640px;
-}
 .trabalhos{
     display: flex;
     flex-wrap: wrap;
