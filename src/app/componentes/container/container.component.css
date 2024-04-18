@@ -1,7 +1,18 @@
 .container{
     height: 100%;
-    margin: 0 auto;
     display: flex;
-    gap: 20px;
     justify-content: center;
+    padding: 50px;
+}
+.content{
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+}
+@media(max-width: 730px){
+    .content{
+        gap: 20px;
+        flex-direction: column-reverse;
+        align-items: end;
+    }
 }
