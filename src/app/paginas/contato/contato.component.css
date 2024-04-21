@@ -3,16 +3,14 @@
     display: flex;
     align-items:center;
 }
-.form-group .form-label {
-    position: absolute;
-    background-color: #ffffff;
-    left: 10px;
-    bottom: auto;
-    transition: transform 0.5s ease;
-}
 .form-group .form-label .label{
     color: var(--color-secondary);
     font-size: 1.75rem;
+    position: absolute;
+    background-color: #ffffff;
+    left: 10px;
+    bottom: 10px;
+    transition: transform 0.5s ease;
 }
 .form-group .form-control{
     width: 100%;
@@ -30,9 +28,7 @@
 .form-group .form-control:focus-visible {
     border: 2px solid var(--color-secondary);
 }
-.form-group .form-control:focus-visible + .form-label{
+.form-group .form-control:focus-visible + .form-label .label{
     transform: translateY(-29px);
 }
-.form-group .form-control:focus-visible + .form-label .label, .hasvalue .label{
-    font-size: 1.5rem;
-}
+    

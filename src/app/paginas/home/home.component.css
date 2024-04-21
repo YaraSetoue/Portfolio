@@ -59,22 +59,31 @@
 }
 .skills-card .card{
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 5px;
-    width: fit-content;
     transition: all 0.4s;
 }
 .skills-card .card:hover{
     background-color: var(--color-secondary);
 }
-.skills-card .card span{
+.skills-card .card .text-card{
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 700;
     color: #ffffff;
+}
+.skills-card .card:hover span{
+    color: var(--color-primary)
+}
+.skills-card .card.tooltip .tooltiptext{
+    padding: 5px;
+    width: fit-content;
+    background-color: #3f2e6d66;
+    font-size: 0.9rem;
+    right: auto;
+    top: 45px;
 }
 .experiencia{
     display: flex;
