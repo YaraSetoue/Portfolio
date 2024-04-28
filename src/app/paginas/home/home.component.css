@@ -1,90 +1,130 @@
+
 .skills{
     background-color: var(--color-secondary);
     margin: 0 -30px;
-    padding: 30px;
+    padding: 20px 30px;
+    padding-bottom: 38px;
     display: flex;
-    gap: 30px;
-    flex-direction: column;
-}
-.list-skills{
-    display: flex;
-    width: 100%;
+    justify-content: space-between;
     flex-direction: row;
-    gap: 50px;
 }
 .skills h2{
-    color: #ffffff;
+    color: var(--color-white);
 }
-.box-skills{
+.skills .box-skills{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 320px;
+    max-width: 50%;
 }
-.skill{
+.skills .box-skills h2{
+    margin-bottom: 10px;
+}
+.skills .box-skills ul li .skill-experiencia p{
+    font-weight: 800;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    /* cursor: pointer; */
-    transition: 0.4s;
-}
-/* .skill:hover{
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px rgb(88 84 99 / 32%);
-} */
-.text-skill{display: flex;
-    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 100px;
+    font-size: 1.02rem;
     color: var(--color-primary);
 }
-.title-skill{
-    color: #3f2e6d;
-}
-
-.percentual::after{content: "";
-    position: relative;
-    display: block;
-    border-radius: 50px;
-    width: 45%;
-    height: 10px;
-    background-color: var(--color-primary);
-}
-.skills-card{
+.skills .box-skills ul li,.skills .box-skills ul li .skill-experiencia,.skills .box-skills .nav-tabs{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+.skills .box-skills ul li{
+    gap: 5px;
+}
+.skills .box-skills ul li:after{
+    content: "";
+    background-color: var(--color-white);
+    height: 8px;
     width: 100%;
+    border-radius: 10px;
+}
+.skills .box-skills ul li .skill-experiencia{
+    position: relative;
+}
+.skills .box-skills ul li .skill-experiencia:after{
+    content: "";
+    position: absolute;
+    top: 25px;
+    background-color: var(--color-primary);
+    height: 8px;
+    width: 35%;
+    border-radius: 10px;
+}
+.skills .box-skills .nav-tabs .tabs{
+    display: flex;
+    flex-direction: row;
     gap: 10px;
 }
-.skills-card .card{
-    display: flex;
-    align-items: center;
-    background-color: var(--color-primary);
-    border: 1px solid var(--color-primary);
-    padding: 10px 10px;
-    border-radius: 5px;
-    transition: all 0.4s;
+.skills .box-skills .nav-tabs:after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    box-shadow: 0px 0px 5px rgb(0,0,0,0.25);
+    border-radius: 10px;
 }
-.skills-card .card:hover{
-    background-color: var(--color-secondary);
+.skills .box-skills .nav-tabs .nav-item{
+    width: fit-content;
+    position: relative;
+    padding-bottom: 6px;
+    cursor: pointer;
 }
-.skills-card .card .text-card{
+.skills .box-skills .nav-tabs .nav-item span{
     font-size: 1rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--color-white);
+    cursor: pointer;
 }
-.skills-card .card:hover span{
-    color: var(--color-primary)
+.skills .box-skills .nav-tabs .nav-item.active:after{
+    content: "";
+    background-color: var(--color-primary);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 25px;
+    border-radius: 10px;
 }
-.skills-card .card.tooltip .tooltiptext{
-    padding: 5px;
+.skills .box-skills .nav-tabs .nav-item.active span{
+    color: var(--color-primary);
+}
+.skills .box-skills .tab-content {
+    margin-top: 8px;
+}
+.skills .box-skills .tab-content .tab-pane{
+    display: none;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.skills .box-skills .tab-content .tab-pane.show{
+    display: flex;
+}
+.skills .box-skills .tab-content .tab-pane .card{
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-white);
+    height: 25px;
+    border-radius: 5px;
     width: fit-content;
-    background-color: #3f2e6d66;
-    font-size: 0.9rem;
-    right: auto;
-    top: 45px;
+    padding: 15px;
+    transition: all 0.4s;
 }
+.skills .box-skills .tab-content .tab-pane .card:hover{
+    background-color: var(--color-secondary);
+}
+.skills .box-skills .tab-content .tab-pane .tooltip .text{
+    font-weight: 700;
+}
+.skills .box-skills .tab-content .tab-pane .tooltip .tooltiptext{
+    background-color: rgb(63 46 109 / 60%);
+    right: auto;
+    top: 33px;
+    font-size: 0.85rem;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0, 0.6);
+}
+
 .experiencia{
     display: flex;
     flex-wrap: wrap;
@@ -125,12 +165,6 @@
     color: #ffffff;
 }
 @media(max-width: 1130px){
-    .list-skills{
-        flex-wrap: wrap;
-    }
-    .box-skills{
-        width: 100%;
-    }
     .experiencia{
         gap: 10px;
     }

@@ -29,6 +29,27 @@ h2{
     font-size: 2rem;
     color: var(--color-title);
 }
+p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+span, p,h2,h3{
+    cursor: default;
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+.w-50{
+    width: 50% !important;
+}
 .box-section{
     display: flex;
     flex-direction: column;
@@ -36,19 +57,6 @@ h2{
     max-width: 700px;
     width: 100%;
 }
-p{
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--color);
-}
-.icon{
-    width: 2rem;
-    height: 2rem;
-}
-a{
-    text-decoration: none;
-}
-
 .cards{
     display: flex;
     flex-direction: column;
@@ -67,12 +75,8 @@ a{
     height: 10px;
     border-radius: 50px;
 }
-li{
-    list-style: none;
-}
 .tooltip {
     position: relative;
-    display: inline-block;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,8 +85,8 @@ li{
     visibility: hidden;
     opacity: 0;
     min-width: 120px;
-    background-color: #3f2e6d;
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--color-white);
     text-align: center;
     padding: 5px;
     border-radius: 5px;
@@ -94,7 +98,7 @@ li{
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-    color: #fff !important;
+    color: var(--color-white) !important;
     font-weight: 500 !important;
 }
 .tooltip:focus .tooltiptext{

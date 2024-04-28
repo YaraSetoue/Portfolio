@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import { Component } from '@angular/core';
 
 @Component({
@@ -20,7 +19,9 @@ export class ContatoComponent{
         }
     }
     hasvalue(e:any){
-        let inputlabel = $("label[for='"+e+"']")
-        inputlabel.addClass('hasvalue')
+        let inputlabel = document.querySelectorAll("label[for='"+e+"']")[0]
+        if(inputlabel){
+            inputlabel.classList.add('hasvalue')
+        }
     }
 }
