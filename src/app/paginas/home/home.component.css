@@ -47,7 +47,7 @@
 .skills .box-skills ul li .skill-experiencia:after{
     content: "";
     position: absolute;
-    top: 25px;
+    top: 24px;
     background-color: var(--color-primary);
     height: 8px;
     width: 35%;
