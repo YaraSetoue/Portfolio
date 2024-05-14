@@ -1,11 +1,28 @@
 <div class="box-section">
     <h2>Contato</h2>
-    <form class="form" action="">
+    <form [formGroup]="ContatoForm" class="form" action="">
         <div class="form-group">
-            <input #val class="form-control" type="text" name="NOME" (keyup)=" onkey(val)">
+            <input formControlName="NOME" class="form-control" type="text" name="NOME" (keyup)="onkey($event)">
             <div class="form-label">
                 <label class="label" for="NOME">Nome</label>
             </div>
+        </div>
+        <div class="form-group">
+            <input formControlName="EMAIL" class="form-control" type="text" name="EMAIL" (keyup)="onkey($event)">
+            <div class="form-label">
+                <label class="label" for="EMAIL">Email</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <textarea  formControlName="MENSSAGEM" class="form-control" name="MENSSAGEM" (keyup)="onkey($event)"></textarea>
+            <div class="form-label textarea">
+                <label class="label" for="MENSSAGEM">Menssagem</label>
+            </div>
+        </div>
+        <div>
+            <button class="btn" type="submit">
+                Enviar
+            </button>
         </div>
     </form>
 </div>

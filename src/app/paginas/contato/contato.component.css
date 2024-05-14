@@ -1,3 +1,8 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
 .form-group{
     position: relative;
     display: flex;
@@ -22,6 +27,17 @@
     font-size: 1.5rem;
     color: var(--color-primary);
 }
+.form-group textarea.form-control{
+    resize: none;
+    width: 500px;
+    height: 100px;
+}
+.form-group textarea.form-control + .form-label .label{
+    transform: translateY(-47px);
+}
+.form-group textarea.form-control + .form-label .hasvalue{
+    transform: translateY(-77px);
+}
 .hasvalue{
     transform: translateY(-29px);
 }
@@ -31,4 +47,22 @@
 .form-group .form-control:focus-visible + .form-label .label{
     transform: translateY(-29px);
 }
-    
+.form-group textarea.form-control:focus-visible + .form-label .label{
+    transform: translateY(-77px);
+}
+.btn{
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    font-family: "Big Shoulders Text", sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.btn:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}

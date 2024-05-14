@@ -9,62 +9,64 @@
         </p>
     </div>
     <div class="skills">
-        <div class="box-skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>
-                    <div class="skill-experiencia">
-                        <p>Desenvolvimento Web<span>35%</span></p>
+        <h2>Skills</h2>
+        <div class="box">
+            <div class="box-skills">
+                <!-- <h2>Desenvolvimento Web</h2> -->
+                <div class="nav-tabs">
+                    <div class="tabs">
+                        <div class="nav-item active" (click)="tabActive($event, 'linguagens')">
+                            <span>Linguagens</span>
+                        </div>
+                        <div class="nav-item" (click)="tabActive($event, 'bancoDeDados')">
+                            <span>Banco de Dados</span>
+                        </div>
+                        <div class="nav-item" (click)="tabActive($event, 'frameworks')">
+                            <span>Frameworks</span>
+                        </div>
                     </div>
-                </li>
-            </ul>
-        </div>
-        <div class="box-skills w-50">
-            <h2>Desenvolvimento Web</h2>
-            <div class="nav-tabs">
-                <div class="tabs">
-                    <div class="nav-item active" (click)="tabActive($event, 'linguagens')">
-                        <span>Linguagens</span>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane show" id="linguagens">
+                        <div class="card tooltip">
+                            <span class="text">HTML/CSS</span>
+                            <span class="tooltiptext">2 anos de experiência</span>
+                        </div>
+                        <div class="card tooltip">
+                            <span class="text">JavaScript</span>
+                            <span class="tooltiptext">2 anos de experiência</span>
+                        </div>
+                        <div class="card tooltip">
+                            <span class="text">PHP</span>
+                            <span class="tooltiptext">2 anos de experiência</span>
+                        </div>
+                        <div class="card tooltip">
+                            <span class="text">Typescript</span>
+                            <span class="tooltiptext">2 anos de experiência</span>
+                        </div>
                     </div>
-                    <div class="nav-item" (click)="tabActive($event, 'bancoDeDados')">
-                        <span>Banco de Dados</span>
+                    <div class="tab-pane" id="bancoDeDados">
+                        <div class="card tooltip">
+                            <span class="text">MySQL</span>
+                            <span class="tooltiptext">2 anos de experiência</span>
+                        </div>
                     </div>
-                    <div class="nav-item" (click)="tabActive($event, 'frameworks')">
-                        <span>Frameworks</span>
+                    <div class="tab-pane" id="frameworks">
+                        <div class="card tooltip">
+                            <span class="text">Laravel</span>
+                            <span class="tooltiptext">2 anos de experiência</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-content">
-                <div class="tab-pane show" id="linguagens">
-                    <div class="card tooltip">
-                        <span class="text">HTML/CSS</span>
-                        <span class="tooltiptext">2 anos de experiência</span>
-                    </div>
-                    <div class="card tooltip">
-                        <span class="text">JavaScript</span>
-                        <span class="tooltiptext">2 anos de experiência</span>
-                    </div>
-                    <div class="card tooltip">
-                        <span class="text">PHP</span>
-                        <span class="tooltiptext">2 anos de experiência</span>
-                    </div>
-                    <div class="card tooltip">
-                        <span class="text">Typescript</span>
-                        <span class="tooltiptext">2 anos de experiência</span>
-                    </div>
-                </div>
-                <div class="tab-pane" id="bancoDeDados">
-                    <div class="card tooltip">
-                        <span class="text">MySQL</span>
-                        <span class="tooltiptext">2 anos de experiência</span>
-                    </div>
-                </div>
-                <div class="tab-pane" id="frameworks">
-                    <div class="card tooltip">
-                        <span class="text">Laravel</span>
-                        <span class="tooltiptext">2 anos de experiência</span>
-                    </div>
-                </div>
+            <div class="box-skills ">
+                <ul>
+                    <li>
+                        <div class="skill-experiencia">
+                            <p>Desenvolvimento Web<span>35%</span></p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

@@ -5,16 +5,23 @@
     padding: 20px 30px;
     padding-bottom: 38px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+.skills .box{
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
 }
 .skills h2{
+    width: 100%;
     color: var(--color-white);
+    margin-bottom: 10px;
 }
 .skills .box-skills{
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    width: 100%;
 }
 .skills .box-skills h2{
     margin-bottom: 10px;
@@ -23,7 +30,7 @@
     font-weight: 800;
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    justify-content: space-between;
     font-size: 1.02rem;
     color: var(--color-primary);
 }
@@ -49,7 +56,7 @@
     position: absolute;
     top: 24px;
     background-color: var(--color-primary);
-    height: 8px;
+    height: 9px;
     width: 35%;
     border-radius: 10px;
 }
@@ -62,7 +69,8 @@
     content: "";
     width: 100%;
     height: 2px;
-    box-shadow: 0px 0px 5px rgb(0,0,0,0.25);
+    /* box-shadow: 0px 0px 5px rgb(0,0,0,0.25); */
+    background-color: #ffffff;
     border-radius: 10px;
 }
 .skills .box-skills .nav-tabs .nav-item{
@@ -121,7 +129,7 @@
     background-color: rgb(63 46 109 / 60%);
     right: auto;
     top: 33px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     text-shadow: 1px 2px 3px rgb(0, 0, 0, 0.6);
 }
 
@@ -165,6 +173,9 @@
     color: #ffffff;
 }
 @media(max-width: 1130px){
+    .skills .box{
+        flex-wrap: wrap;
+    }
     .experiencia{
         gap: 10px;
     }
